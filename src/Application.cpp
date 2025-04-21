@@ -5,15 +5,10 @@
 using namespace bobcat;
 using namespace std;
 
-<<<<<<< HEAD
-Application::Application() {
-    window = new Window(100, 100, 400, 400, "Paint App");
-=======
 void Application::onCanvasMouseDown(bobcat::Widget* sender, float mx, float my) {
     TOOL tool = toolbar->getTool();
     Color color = colorSelector->getColor();
->>>>>>> a8b6ec2e6b3b86acafbdb74d13c81a3271aedc00
-
+    ///Test modifcation tosee if session was wiped or not
     if (tool == PENCIL) {
         canvas->startScribble();
         canvas->updateScribble(mx, my, color.getR(), color.getG(), color.getB(), 7);
